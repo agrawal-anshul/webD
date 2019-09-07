@@ -1,0 +1,92 @@
+body{
+    font-family: 'Crimson Pro', serif;
+    background: url('./pics/painting.jpg');
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    text-align: center;
+}
+#header{
+    font-size: 5vw;
+    margin-bottom: 30px;
+    background: rgba(190, 180, 168, 0.4) 
+    
+}
+
+.inputContainer{
+    width:200px;
+    margin:0 auto;
+}
+#slider{
+    margin:7px auto; 
+}
+/* color input,line thickness,slider */
+.input{
+    height: 30px;
+    font-size: 1.3em;
+}
+
+#thicknessInput{
+    position: relative;
+}
+#circle{
+    position: absolute;
+    height:3px;
+    width:3px;
+    border-radius: 100%;
+    background: black;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    /* half of the circle  was overlapping eith the slider */
+    /* So to move the circle up by its radius following code */
+    transform: translate(-50%,-50%); 
+    -webkit-transform: translate(-50%,-50%); 
+    -moz-transform: translate(-50%,-50%); 
+    -ms-transform: translate(-50%,-50%); 
+    -o-transform: translate(-50%,-50%); 
+        
+}
+#container{
+    height:400px;
+    width: 400px;
+    border:5px solid black;
+    /* background: white; */
+    margin: 5px auto;
+
+
+}
+
+.inputContainer2{
+    /* width:40vw; */
+    margin:0 auto;
+}
+.button{
+   
+    text-decoration: none;
+    color: black;
+    background: rgba(241, 169, 160, 0.5);
+    font-size: 1.3em;
+}
+.inputContainer2 div{
+    display: inline-block;
+    
+    
+}
+.button:hover{
+    background: rgba(241, 169, 160, 0.7);
+    padding: 2px;
+}
+#paint{
+    height:400px;
+    /* height and width are 100% with respect to container*/
+    width:400px;
+   background-color: white;
+   cursor: crosshair;
+}
+.eraseMode{
+    background: red;
+    color:white;
+}

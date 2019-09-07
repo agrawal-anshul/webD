@@ -1,0 +1,88 @@
+body{
+    font-family: 'Arvo', serif;
+    background: url("pics/thunder.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    font-family: Arvo,serif;
+}
+.brand{
+   position: relative;
+   top:-5px;
+   left:2px;
+    height: 30px;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.7);
+}
+.navbar-collapse a{
+    color: #55ffd8;
+    font-size:1.3em;
+    font-family: 'Arvo', serif;
+   
+    
+}
+.nav li{
+    padding-bottom:8px; 
+}
+.nav li:hover{
+    border-bottom: 1px solid #00ffd8;
+    padding-bottom:7px; 
+    cursor:pointer;
+}
+.jumbotron{
+    background:rgba(0, 0, 0, 0.3) !important;
+    color:white!important;
+    text-align: center;
+    margin:0px;
+}
+
+.bodyImage{
+    height:100px; 
+}
+.col-md-4{
+    text-align: center;
+    color: white;
+}
+.icons p{
+    font-size: 15px;
+}
+.container{
+    /* border: 1px solid red; */
+    max-width: 1000px;
+}
+.contact{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.btn{
+    background-color: rgba(0, 255, 183, 0.5);
+    border:none !important;
+    color:white;
+    font-size: 18px !important;
+    padding: 10px 80px !important;
+    letter-spacing: 1.8px;
+   
+
+}
+.btn:hover{
+    background: rgba(0, 0, 0, 0.5);
+    color: white !important;
+    border: none;
+}
+.footer{
+    background: rgba(0, 0, 0, 0.5);
+    color: grey;
+    font-size: 15px;
+    padding:10px 0;
+}
+/* media queries to change the icon size for small devices */
+@media(max-width:768px)
+{
+    .bodyImage{
+        height: 70px !important;
+    }
+}

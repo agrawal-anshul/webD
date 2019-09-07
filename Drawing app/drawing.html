@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Drawing App</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+    <!-- title -->
+    <div id="header">Drawing App</div>
+    <div class="inputContainer">
+        
+        
+        <!-- color -->
+        <div class="input" id="colorInput">
+            <input type="color" list id="paintColor">
+        </div>
+
+        <!-- size of brush -->
+        <div class="input" id="thicknessInput">
+            <div id="circle"></div>
+        </div>
+
+        <div class="input">
+            <div id="slider"></div>
+        </div>
+
+        
+
+    </div>
+    <!-- canvas -->
+        <div id="container">
+            <canvas id="paint"></canvas>
+        </div>
+
+        <!--buttons-->
+        <div class="inputContainer2">
+            <!-- Erase -->
+            <div class="input2">
+                    <a href="#" class="button" id="erase">Erase     </a>
+            </div>
+            <!-- Save -->
+            <div class="input2">
+                    <a href="#" class="button" id="save">Save</a>
+            </div>
+            <!-- Reset -->
+            <div class="input2">
+               <a href="#" class="button" id="reset">Reset</a>
+            </div>
+        </div>
+
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./drawing.js"></script>
+
+</body>
+</html>
